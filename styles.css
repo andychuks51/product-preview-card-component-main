@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap");
+
+:root {
+  --primary-d-cyan: hsl(158, 36%, 37%);
+  --primary-cream: hsl(30, 38%, 92%);
+  --neutral-d-blue: hsl(212, 21%, 14%);
+  --neutral-d-grayish-blue: hsl(228, 12%, 48%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  --font-paragraph: 0.875rem;
+  --font-headings: 2rem;
+  --text-paragraph: "Montserrat", sans-serif;
+  --text-headings: "Fraunces", serif;
+  --text-weight-headings: 700;
+  --text-weight-paragraph-1: 500;
+  --text-weight-paragraph-2: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-cream);
+}
+
+.card-container {
+  margin-inline: auto;
+  inline-size: 90%;
+  margin-block: 3rem;
+}
+
+.card-img {
+  inline-size: 100%;
+  block-size: 11.8rem;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.body-text-container {
+  background-color: var(--neutral-white);
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.card-title {
+  font-family: var(--text-paragraph);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.35rem;
+  font-weight: var(--text-weight-paragraph-1);
+}
+
+.card-heading {
+  font-family: var(--text-headings);
+  font-size: 1.6rem;
+  margin-block: 0.875rem;
+  line-height: 1.1;
+  font-weight: var(--text-weight-headings);
+}
+
+.body-paragraph {
+  font-size: 0.75rem;
+  font-family: var(--text-paragraph);
+  line-height: 1.4;
+}
+
+.card-price-label {
+  display: flex;
+  align-items: center;
+  margin-block: 0.875rem;
+}
+
+.new-price {
+  margin-inline-end: 0.8rem;
+  font-family: var(--text-headings);
+  font-size: 1.7rem;
+  color: var(--primary-d-cyan);
+}
+
+.old-price {
+  font-family: var(--text-paragraph);
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 2.5rem;
+  inline-size: 100%;
+  border: none;
+  background-color: var(--primary-d-cyan);
+  color: var(--neutral-white);
+  font-size: 0.75rem;
+  border-radius: 0.3rem;
+
+  img {
+    margin-inline-end: 0.8rem;
+  }
+}
+
+@media (min-width: 23.43em) and (max-width: 30em) {
+  .card-img {
+    block-size: 14em;
+  }
+
+  .card-heading {
+    inline-size: 18rem;
+    font-size: 2rem;
+  }
+
+  .card-title {
+    margin-block: 1rem;
+  }
+
+  .body-paragraph {
+    font-size: var(--font-paragraph);
+    /* inline-size: 13rem; */
+  }
+
+  .new-price {
+    font-size: 2rem;
+  }
+
+  .old-price {
+    font-size: var(--font-paragraph);
+  }
+
+  .card-btn {
+    block-size: 3rem;
+    font-size: var(--font-paragraph);
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  .attribution {
+      font-size: 11px;
+  
+          a {
+              color: hsl(228, 45%, 44%); 
+      }
+  }
+}
+
+@media (min-width: 30em) and (max-width: 90em) {
+  .card-container {
+    margin-inline: auto;
+    display: flex;
+    inline-size: 37.5rem;
+    block-size: 27.813rem;
+    margin-block: 10rem;
+  }
+
+  .card-img {
+    background-image: url(./images/image-product-desktop.jpg);
+    inline-size: 50%;
+    block-size: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .body-text-container {
+    inline-size: 50%;
+    block-size: 100%;
+    border-radius: 0 0.5rem 0.5rem 0 ;
+  }
+
+  .card-heading {
+    inline-size: 16rem;
+    font-size: 2.2rem;
+  }
+
+  .body-paragraph {
+    margin-block: 2rem;
+    inline-size: 16.5rem;
+  }
+
+  .new-price {
+    font-size: 2rem;
+  }
+
+  .card-price-label {
+    margin-block: rem;
+  }
+
+  .card-btn {
+    block-size: 3rem;
+    font-size: 1rem;
+
+    img {
+      inline-size: 1.2rem;
+    }
+  }
+}
