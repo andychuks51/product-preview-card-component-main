@@ -21,6 +21,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 body {
@@ -145,11 +146,11 @@ footer {
   justify-content: center;
 
   .attribution {
-      font-size: 11px;
-  
-          a {
-              color: hsl(228, 45%, 44%); 
-      }
+    font-size: 11px;
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
   }
 }
 
@@ -172,7 +173,7 @@ footer {
   .body-text-container {
     inline-size: 50%;
     block-size: 100%;
-    border-radius: 0 0.5rem 0.5rem 0 ;
+    border-radius: 0 0.5rem 0.5rem 0;
   }
 
   .card-heading {
